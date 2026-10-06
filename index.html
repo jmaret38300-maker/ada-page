@@ -8,7 +8,7 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="logo">Zinedine Zidane</div>
+      <div class="nom">Zinedine Zidane</div>
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-button"> ☰ </label>
 
@@ -21,14 +21,17 @@
     </nav>
     <main>
       <div class="titre">
-        <img src="zizou.jpg" alt="Portrait de Zinedine Zidane" class="zz" />
+        <img
+          src="images/zizou.jpg"
+          alt="Portrait de Zinedine Zidane"
+          class="zz"
+        />
         <div class="legende">
           <h1>Zinedine<br />Zidane</h1>
           Une légende du football
         </div>
       </div>
-      <!-- Modification : les classes CSS ne doivent pas commencer par un chiffre -->
-      <div class="corps-1">
+      <div id="presentation">
         <h2>Sa vie et sa carrière</h2>
         <p>
           Zinédine Zidane, surnommé « Zizou », est un monument du football
@@ -45,12 +48,15 @@
         </p>
       </div>
     </main>
-    <footer>
-      <div class="contact">
-        <h4>Contact</h4>
-        <a href="mailto:tonemail@exemple.com"> ✉ contact@zidane.fr </a><br />
-        <p>☎ 06 12 34 56 78</p>
-      </div>
+    <footer id="contact">
+      <h2>Contact</h2>
+      <a href="mailto:tonemail@exemple.com"> ✉ contact@zidane.fr </a><br />
+      <p>☎ 06 12 34 56 78</p>
+      <br />
+
+      <img src="images/instagram-logo.png" alt="logo instagram" />
+      <img src="images/twitter.png" alt="logo X" />
+      <img src="images/facebook.png" alt="logo facebook" />
     </footer>
   </body>
 </html>
