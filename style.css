@@ -6,7 +6,7 @@ body {
 .navbar {
     background-color: #102d4f;
     padding: 1rem;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,17 +41,27 @@ body {
     right: 0;
     background-color: #102d4f;
     z-index: 100;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;         
 }
 
 .menu a {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     text-decoration: none;
     padding: 0.8rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
 }
 
 #menu-toggle:checked ~ .menu {
-    display: block;
+    display: flex;
 }
 
 .titre {
@@ -67,9 +77,26 @@ body {
 
 .legende {
     position: absolute;
+    text-align: end;
+    font-size: 3.5vw;
     top: 0rem;
     right: 1rem;
     color: white;
+}
+
+main {
+    background-color: #F4F6F8;
+    text-align: center;
+    border-left: 2px solid #102d4f;
+    border-right: 2px solid #102d4f;
+}
+
+main h2 {
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #F4F6F8;
 }
 
 #presentation p {
@@ -80,11 +107,11 @@ footer {
     background-color: #102d4f;
     color: white;
     padding: 2rem 1rem;
-    
     display: flex;
-    flex-direction: column; /* Empile h2, contacts, reseaux et copyright */
-    align-items: center;    /* Centre horizontalement tout le contenu */
-    gap: 1.5rem;            /* 👈 Gère l'espace vertical régulier entre chaque bloc */
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 0 0 10px 10px;
 }
 
 footer h2 {
@@ -93,7 +120,7 @@ footer h2 {
 }
 
 /* Zone des informations de contact */
-.contacts {
+#contacts {
     display: flex;
     flex-direction: column;
     align-items: center;    /* Centre le texte des liens/numéros */
@@ -101,7 +128,7 @@ footer h2 {
     font-size: 0.9rem;
 }
 
-.contacts p {
+#contacts p {
     margin: 0;              /* Supprime la marge par défaut des balises <p> */
 }
 
@@ -133,6 +160,34 @@ footer img {
     margin: 0;
 }
 
+.carte {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 15rem;
+    height: 20rem;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 1rem;
+}
+
+.carte h3 {font-size: 2rem;}
+.carte p {font-size: 1.2rem;}
+
+.cartes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.carte img {
+    width: 40%;
+    margin-top: 1rem;
+}
+
+
 /* =========================
    GRAND ÉCRAN
    ========================= */
@@ -145,18 +200,23 @@ footer img {
 
     .menu {
         display: flex;
+        flex-direction: row;
         position: static;
         padding: 0;
-        gap: 2rem;
+        gap: 0.8rem;
         z-index: auto;
-    }
-
-    .menu a {
-        padding: 0;
     }
 
     body {
     padding-left: 10%;
     padding-right: 10%;
   }
+
+  .legende {
+    font-size: 1rem;
+  }
+
+  .carte {
+        width: 40%;
+    }
 }

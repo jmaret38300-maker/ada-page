@@ -7,44 +7,68 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="nom">Zinedine Zidane</div>
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-button"> ☰ </label>
+    <header>
+      <nav class="navbar">
+        <div class="nom">Zinedine Zidane</div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-button"> ☰ </label>
 
-      <ul class="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="index.html#presentation">Présentation</a></li>
-        <li><a href="cartes.html">Les cartes</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#presentation">Présentation</a></li>
+          <li><a href="cartes.html">Les cartes</a></li>
+          <li><a href="index.html#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <div class="corps-2">
-        <h2>En quelques chiffres</h2>
-        <div class="cartes">
-          <div class="nationalite">
-            <h3>Nationalité</h3>
-            <p>Française</p>
-          </div>
-          <div class="metier">
-            <h3>Métier</h3>
-            <p>
-              Footballeur <br />
-              (➔puis entraineur)
-            </p>
-          </div>
-          <div class="signe">
-            <h3>Signe Astrologique</h3>
-            <p>Cancer</p>
-          </div>
-          <div class="qualite">
-            <h3>Meilleure qualité</h3>
-            <p>Son leadership</p>
-          </div>
+      <h2>Zinedine Zidane en quelques mots</h2>
+      <div class="cartes">
+        <div class="carte">
+          <img src="images/circle.png" alt="drapeau français" />
+          <h3>Nationalité</h3>
+          <p>Française</p>
+        </div>
+        <div class="carte">
+          <img src="images/soccer-ball-variant.png" alt="ballon de football" />
+          <h3>Métier</h3>
+          <p>
+            Footballeur <br />
+            (➔puis entraineur)
+          </p>
+        </div>
+        <div class="carte">
+          <img src="images/cancer.png" alt="Image d'un crabe signe du cancer" />
+          <h3>Signe Astrologique</h3>
+          <p>Cancer</p>
+        </div>
+        <div class="carte">
+          <img
+            src="images/star-black-in-a-circle.png"
+            alt="Etoile noire dans un cercle noir"
+          />
+          <h3>Meilleure qualité</h3>
+          <p>Son leadership</p>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <h2>Contact</h2>
+
+      <div id="contacts">
+        <a href="mailto:contact@zidane.fr">✉ contact@zidane.fr</a>
+        <p>☎ 06 12 34 56 78</p>
+      </div>
+
+      <div class="reseaux">
+        <a href="#"><img src="images/instagram-logo.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/twitter.png" alt="X (Twitter)" /></a>
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+      </div>
+
+      <div id="copyright">
+        <p>&copy; 2026 - Zinedine Zidane</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="nom">Zinedine Zidane</div>
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-button"> ☰ </label>
+    <header>
+      <nav class="navbar">
+        <div class="nom">Zinedine Zidane</div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-button"> ☰ </label>
 
-      <ul class="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="#presentation">Présentation</a></li>
-        <li><a href="cartes.html">Les cartes</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#presentation">Présentation</a></li>
+          <li><a href="cartes.html">Les cartes</a></li>
+          <li><a href="index.html#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <div class="titre">
         <img
@@ -94,7 +96,7 @@
     <footer>
       <h2>Contact</h2>
 
-      <div class="contacts">
+      <div id="contacts">
         <a href="mailto:contact@zidane.fr">✉ contact@zidane.fr</a>
         <p>☎ 06 12 34 56 78</p>
       </div>
