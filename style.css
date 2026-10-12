@@ -21,7 +21,15 @@ body {
 }
 
 #menu-toggle {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+#menu-toggle:focus-visible + .menu-button {
+    outline: 3px solid orange;
+    outline-offset: 3px;
 }
 
 .menu-button {
@@ -58,6 +66,12 @@ body {
     border-radius: 10px;
     padding: 0.4rem 0.8rem;
     font-size: 0.85rem;
+    min-height: 44px;
+}
+
+.menu a:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 3px;
 }
 
 #menu-toggle:checked ~ .menu {
@@ -119,41 +133,62 @@ footer h2 {
     margin: 0;
 }
 
-/* Zone des informations de contact */
+
 #contacts {
     display: flex;
     flex-direction: column;
-    align-items: center;    /* Centre le texte des liens/numéros */
-    gap: 0.5rem;            /* Espace entre l'email et le téléphone */
+    align-items: center;
+    gap: 0.5rem;
     font-size: 0.9rem;
 }
 
 #contacts p {
-    margin: 0;              /* Supprime la marge par défaut des balises <p> */
+    margin: 0;
 }
 
 footer a {
     color: white;
     text-decoration: none;
+    min-height: 44px;
+    min-width: 44px;
 }
 
-/* Zone des icônes de réseaux sociaux */
+footer a:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}
+
+.mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 .reseaux {
     display: flex;
     flex-direction: row;
-    gap: 1.2rem;            /* Espace horizontal entre les icônes */
+    gap: 1.2rem;
 }
 
 footer img {
-    width: 1.5rem;
-    height: 1.5rem;
-    filter: invert(1);       /* Rend les images sombres/noires complètement blanches */
+    width: 2rem;
+    height: 2rem;
+    filter: invert(1);
 }
 
-/* Zone Copyright */
+.reseau-btn {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 #copyright {
-    font-size: 0.75rem;     /* Taille discrète mais lisible (~12px) */
-    opacity: 0.8;           /* Légère transparence pour adoucir le texte */
+    font-size: 0.75rem;
 }
 
 #copyright p {
@@ -215,8 +250,11 @@ footer img {
   .legende {
     font-size: 1rem;
   }
+}
 
-  .carte {
+@media (min-width: 1300px) {
+    .carte {
         width: 40%;
+        height: 23rem;
     }
 }
